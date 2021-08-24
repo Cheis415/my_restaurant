@@ -1,0 +1,46 @@
+$color-dark: #262626;
+$color-black: #000;
+$color-primary: #f5e7a9;
+$color-secondary: #bbb;
+
+$font-dancingScript: 'Dancing Script', cursive;
+$font-josefinSans: 'Josefin Sans', sans-serif;
+$font-nunito: 'Nunito', sans-serif;
+
+@mixin flexLayout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin textStyles($transform: uppercase) {
+  letter-spacing: 2px;
+  text-transform: $transform;
+  font-weight: 300;
+}
+
+@mixin centering($topValue) {
+  position: absolute;
+  top: $topValue;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+%fullSpace {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+body {
+  background-color: $color-dark;
+  max-width: 1440px;
+}
