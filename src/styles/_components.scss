@@ -113,7 +113,7 @@
   
   }
   @media(max-width: 500px) {
-    font-size: 40px;
+    font-size: 80px;
     margin-bottom: 20px;
   }
 }
@@ -262,5 +262,54 @@
    @extend %fullSpace;
     object-fit: cover;
     opacity: .5;
+  }
+}
+
+.Modal {
+  z-index: 5000;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: #262626b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-body {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #bbbbbb96;
+    border: 1px solid $color-primary;
+
+    &-title {
+      font-family: $font-dancingScript;
+      color: $color-primary;
+      font-size: 40px;
+      padding: 10px;
+    }
+    p {
+      width: 80%;
+      font-family: $font-josefinSans;
+      color: $color-primary;
+    }
+  }
+  .stars {
+    width: 80%;
+    margin: 15px;
+  }
+  .star {
+    padding: 5px;
+  }
+
+  .btn-container {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+
+    .main-btn {
+      margin: 10px;
+    }
   }
 }

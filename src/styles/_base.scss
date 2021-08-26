@@ -30,6 +30,10 @@ $font-nunito: 'Nunito', sans-serif;
   height: 100%;
   width: 100%;
 }
+a {
+  text-decoration: none;
+  color: #f5e7a9;
+}
 
 * {
   margin: 0;
@@ -37,10 +41,21 @@ $font-nunito: 'Nunito', sans-serif;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 1600px;
+
+  @media(min-width: 1600px) {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
   
 }
 
 body {
   background-color: $color-dark;
-  max-width: 1440px;
+
+  @media(min-width: 1600px) {
+    width: 1600px;
+    margin: 0 auto;
+  }
 }
+

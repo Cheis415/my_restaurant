@@ -159,6 +159,10 @@
    @include centering(60%);
    text-align: center;
    color: white;
+
+   @media(max-width: 500px) {
+    @include centering(55%);
+  }
   }
 }
 
@@ -229,7 +233,7 @@
       }
 
       @media(max-width: 1600px) {
-        font-size: 18px;
+        font-size: 16px;
       }
       @media(max-width: 900px) {
         font-size: 12px;
@@ -241,12 +245,15 @@
   }
 }
 .gallery {
-
   .cards-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
+    // .card {
+    //   height: 100%;
+    // }
   }
 }
 
@@ -263,6 +270,11 @@
     display: flex;
     align-items: center;
     margin-bottom: 100px;
+
+    @media(max-width: 500px) {
+      margin-top: 150px;
+      margin-bottom: 30px;
+    }
   }
 
   .social-media {
