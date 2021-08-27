@@ -90,13 +90,16 @@
         text-decoration: none;
         display: block;
         margin: 20px;
+        background-color: #1f1d1d;
+        border: none;
         text-align: center;
         transition: all .5s;
         cursor: pointer;
 
         &:hover {
           color: $color-primary;
-          letter-spacing: 4px;
+          transform: scale(1.1);
+          
 
           @media(max-width: 600px) {
             font-size: 40px;

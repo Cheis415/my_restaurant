@@ -5,9 +5,9 @@ const Footer = () => {
 	return (
 		<footer className="footer">
 			<div className="footer-header">
-				<a href="#" className="logo">
+				<button className="logo">
 					<i className="fas fa-utensils"></i>
-				</a>
+				</button>
 				<div>
 					<h1 className="main-name">Heisler's</h1>
 					<p className="sub-name">Restaurants</p>

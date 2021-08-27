@@ -36,34 +36,22 @@ const Navbar = () => {
 				<div className="navbar-navigation-right">
 					<ul className="nav-list">
 						<li className="nav-list-item">
-							<a href="#" className="nav-list-link">
-								These
-							</a>
+							<button className="nav-list-link">These</button>
 						</li>
 						<li className="nav-list-item">
-							<a href="#" className="nav-list-link">
-								Links
-							</a>
+							<button className="nav-list-link">Links</button>
 						</li>
 						<li className="nav-list-item">
-							<a href="#" className="nav-list-link">
-								Don't
-							</a>
+							<button className="nav-list-link">Don't</button>
 						</li>
 						<li className="nav-list-item">
-							<a href="#" className="nav-list-link">
-								Actually
-							</a>
+							<button className="nav-list-link">Actually</button>
 						</li>
 						<li className="nav-list-item">
-							<a href="#" className="nav-list-link">
-								Go
-							</a>
+							<button className="nav-list-link">Go</button>
 						</li>
 						<li className="nav-list-item">
-							<a href="#" className="nav-list-link">
-								Anywhere
-							</a>
+							<button className="nav-list-link">Anywhere</button>
 						</li>
 					</ul>
 				</div>
