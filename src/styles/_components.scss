@@ -14,6 +14,11 @@
     width: 25px;
     height: 25px;
   }
+  @media(min-width: 1600px) {
+    position: absolute;
+    top: 12vh;
+    right: 5vw;
+  }
 
   .menu {
     @extend %fullSpace;
